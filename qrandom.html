@@ -1,0 +1,3021 @@
+<html lang="vi"><!--<![endif]-->
+
+<head dir="ltr">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/static/MOOC_Study/images/favicon.12035673d43a.png">
+
+
+
+    <title>Quiz An toàn thông tin</title>
+
+
+    <script type="text/javascript">
+        /* immediately break out of an iframe if coming from the marketing website */
+        (function (window) {
+            if (window.location !== window.top.location) {
+                window.top.location = window.location;
+            }
+        })(this);
+    </script>
+
+
+
+    <script type="text/javascript" src="/static/js/i18n/vi/djangojs.87100e2f001c.js"></script>
+
+
+
+
+    <link href="/static/MOOC_Study/css/lms-style-vendor.68e48093f5dd.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+    <link href="/static/MOOC_Study/css/lms-main-v1.dfa2a526fec7.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+    <script type="text/javascript" src="/static/js/lms-main_vendor.3c3c9a2604d6.js" charset="utf-8"></script>
+
+
+
+
+    <script type="text/javascript" src="/static/js/lms-application.0e3fae472a20.js" charset="utf-8"></script>
+
+
+
+
+
+
+    <script type="text/javascript" src="/static/bundles/commons.7f098ebf361800b33274.fd5658feff67.js"></script>
+
+
+
+    <script>
+        window.baseUrl = "/static/";
+        (function (require) {
+            require.config({
+                baseUrl: window.baseUrl
+            });
+        }).call(this, require || RequireJS.require);
+    </script>
+    <script type="text/javascript" src="/static/lms/js/require-config.38226099c6ad.js"></script>
+
+    <script type="text/javascript">
+        (function (require) {
+            require.config({
+                paths: {
+                    'course_bookmarks/js/views/bookmark_button': 'course_bookmarks/js/views/bookmark_button.d4cfaf3361fa',
+                    'js/views/message_banner': 'js/views/message_banner.91290dbe25ba',
+                    'moment': 'common/js/vendor/moment-with-locales.43ec67e44612',
+                    'moment-timezone': 'common/js/vendor/moment-timezone-with-data.60142e6c4416',
+                    'js/courseware/course_info_events': 'js/courseware/course_info_events.2fc35b57627f',
+                    'js/courseware/accordion_events': 'js/courseware/accordion_events.6064c7809de5',
+                    'js/dateutil_factory': 'js/dateutil_factory.84670a6ecfae',
+                    'js/courseware/link_clicked_events': 'js/courseware/link_clicked_events',
+                    'js/courseware/toggle_element_visibility': 'js/courseware/toggle_element_visibility.d5f10bc65ed0',
+                    'js/student_account/logistration_factory': 'js/student_account/logistration_factory.480c33343e77',
+                    'js/courseware/courseware_factory': 'js/courseware/courseware_factory.1504fc10caef',
+                    'js/groups/views/cohorts_dashboard_factory': 'js/groups/views/cohorts_dashboard_factory.ca68388d81d6',
+                    'js/groups/discussions_management/discussions_dashboard_factory': 'js/discussions_management/views/discussions_dashboard_factory.2e10d9097343',
+                    'draggabilly': 'js/vendor/draggabilly.26caba6f7187',
+                    'hls': 'common/js/vendor/hls.8f15a0109b05'
+                }
+            });
+        }).call(this, require || RequireJS.require);
+    </script>
+
+
+
+
+
+
+    <link href="/static/MOOC_Study/css/lms-style-course-vendor.730dda42e3c1.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+    <link href="/static/MOOC_Study/css/lms-course.d934e9264483.css" rel="stylesheet" type="text/css">
+
+
+
+
+    <script type="text/javascript" src="/static/js/jquery.autocomplete.3bd10d7510d2.js"></script>
+    <script type="text/javascript" src="/static/js/src/tooltip_manager.b8fa94d4cefc.js"></script>
+
+    <link href="/static/css/vendor/jquery.autocomplete.896181d3ec33.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet"
+        href="/static/xblock/resources/xmodule.quiz_navigator_module/public/css/quiz_map.ccb25e9f5ffb.css"
+        type="text/css">
+
+
+
+
+
+
+
+
+
+    <script type="application/json" id="user-metadata">
+    {"username": "", "user_id": , "course_id": "", "enrollment_mode": "audit", "upgrade_link": null, "upgrade_price": "Free", "audit_access_deadline": null, "course_duration": null, "pacing_type": "instructor_paced", "has_staff_access": false, "forum_roles": [["Student"]], "partition_groups": {"Nh\u00f3m Ch\u01b0\u01a1ng tr\u00ecnh Tuy\u1ec3n sinh": [1, "Audit"]}, "has_non_audit_enrollments": false, "program_key_fields": null, "email": "minh.pn210600@sis.hust.edu.vn", "schedule_start": null, "enrollment_time": "2024-02-22T05:42:13.306267+00:00", "course_start": "2024-01-01T00:00:00+00:00", "course_end": "2024-06-30T00:30:00+00:00", "dynamic_upgrade_deadline": null, "course_upgrade_deadline": null, "course_key_fields": {"org": "SoICT", "course": "IT4015", "run": "TungBT"}}
+</script>
+
+
+
+
+
+
+
+
+
+    <!-- dummy Segment -->
+    <script type="text/javascript">
+        var analytics = {
+            track: function () { return; },
+            trackLink: function () { return; },
+            pageview: function () { return; },
+            page: function () { return; }
+        };
+    </script>
+    <!-- end dummy Segment -->
+
+
+    <meta name="path_prefix" content="">
+
+
+    <meta name="openedx-release-line" content="koa">
+
+
+
+
+
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="/static/js/commerce/track_ecommerce_events.0a92c313c996.js?raw"
+        src="/static/js/commerce/track_ecommerce_events.0a92c313c996.js?raw"></script>
+    <style type="text/css">
+        .MathJax_Hover_Frame {
+            border-radius: .25em;
+            -webkit-border-radius: .25em;
+            -moz-border-radius: .25em;
+            -khtml-border-radius: .25em;
+            box-shadow: 0px 0px 15px #83A;
+            -webkit-box-shadow: 0px 0px 15px #83A;
+            -moz-box-shadow: 0px 0px 15px #83A;
+            -khtml-box-shadow: 0px 0px 15px #83A;
+            border: 1px solid #A6D ! important;
+            display: inline-block;
+            position: absolute
+        }
+
+        .MathJax_Menu_Button .MathJax_Hover_Arrow {
+            position: absolute;
+            cursor: pointer;
+            display: inline-block;
+            border: 2px solid #AAA;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -khtml-border-radius: 4px;
+            font-family: 'Courier New', Courier;
+            font-size: 9px;
+            color: #F0F0F0
+        }
+
+        .MathJax_Menu_Button .MathJax_Hover_Arrow span {
+            display: block;
+            background-color: #AAA;
+            border: 1px solid;
+            border-radius: 3px;
+            line-height: 0;
+            padding: 4px
+        }
+
+        .MathJax_Hover_Arrow:hover {
+            color: white !important;
+            border: 2px solid #CCC !important
+        }
+
+        .MathJax_Hover_Arrow:hover span {
+            background-color: #CCC !important
+        }
+    </style>
+    <style type="text/css">
+        #MathJax_About {
+            position: fixed;
+            left: 50%;
+            width: auto;
+            text-align: center;
+            border: 3px outset;
+            padding: 1em 2em;
+            background-color: #DDDDDD;
+            color: black;
+            cursor: default;
+            font-family: message-box;
+            font-size: 120%;
+            font-style: normal;
+            text-indent: 0;
+            text-transform: none;
+            line-height: normal;
+            letter-spacing: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            float: none;
+            z-index: 201;
+            border-radius: 15px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -khtml-border-radius: 15px;
+            box-shadow: 0px 10px 20px #808080;
+            -webkit-box-shadow: 0px 10px 20px #808080;
+            -moz-box-shadow: 0px 10px 20px #808080;
+            -khtml-box-shadow: 0px 10px 20px #808080;
+            filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')
+        }
+
+        #MathJax_About.MathJax_MousePost {
+            outline: none
+        }
+
+        .MathJax_Menu {
+            position: absolute;
+            background-color: white;
+            color: black;
+            width: auto;
+            padding: 2px;
+            border: 1px solid #CCCCCC;
+            margin: 0;
+            cursor: default;
+            font: menu;
+            text-align: left;
+            text-indent: 0;
+            text-transform: none;
+            line-height: normal;
+            letter-spacing: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            float: none;
+            z-index: 201;
+            box-shadow: 0px 10px 20px #808080;
+            -webkit-box-shadow: 0px 10px 20px #808080;
+            -moz-box-shadow: 0px 10px 20px #808080;
+            -khtml-box-shadow: 0px 10px 20px #808080;
+            filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')
+        }
+
+        .MathJax_MenuItem {
+            padding: 2px 2em;
+            background: transparent
+        }
+
+        .MathJax_MenuArrow {
+            position: absolute;
+            right: .5em;
+            padding-top: .25em;
+            color: #666666;
+            font-size: .75em
+        }
+
+        .MathJax_MenuActive .MathJax_MenuArrow {
+            color: white
+        }
+
+        .MathJax_MenuArrow.RTL {
+            left: .5em;
+            right: auto
+        }
+
+        .MathJax_MenuCheck {
+            position: absolute;
+            left: .7em
+        }
+
+        .MathJax_MenuCheck.RTL {
+            right: .7em;
+            left: auto
+        }
+
+        .MathJax_MenuRadioCheck {
+            position: absolute;
+            left: 1em
+        }
+
+        .MathJax_MenuRadioCheck.RTL {
+            right: 1em;
+            left: auto
+        }
+
+        .MathJax_MenuLabel {
+            padding: 2px 2em 4px 1.33em;
+            font-style: italic
+        }
+
+        .MathJax_MenuRule {
+            border-top: 1px solid #CCCCCC;
+            margin: 4px 1px 0px
+        }
+
+        .MathJax_MenuDisabled {
+            color: GrayText
+        }
+
+        .MathJax_MenuActive {
+            background-color: Highlight;
+            color: HighlightText
+        }
+
+        .MathJax_MenuDisabled:focus,
+        .MathJax_MenuLabel:focus {
+            background-color: #E8E8E8
+        }
+
+        .MathJax_ContextMenu:focus {
+            outline: none
+        }
+
+        .MathJax_ContextMenu .MathJax_MenuItem:focus {
+            outline: none
+        }
+
+        #MathJax_AboutClose {
+            top: .2em;
+            right: .2em
+        }
+
+        .MathJax_Menu .MathJax_MenuClose {
+            top: -10px;
+            left: -10px
+        }
+
+        .MathJax_MenuClose {
+            position: absolute;
+            cursor: pointer;
+            display: inline-block;
+            border: 2px solid #AAA;
+            border-radius: 18px;
+            -webkit-border-radius: 18px;
+            -moz-border-radius: 18px;
+            -khtml-border-radius: 18px;
+            font-family: 'Courier New', Courier;
+            font-size: 24px;
+            color: #F0F0F0
+        }
+
+        .MathJax_MenuClose span {
+            display: block;
+            background-color: #AAA;
+            border: 1.5px solid;
+            border-radius: 18px;
+            -webkit-border-radius: 18px;
+            -moz-border-radius: 18px;
+            -khtml-border-radius: 18px;
+            line-height: 0;
+            padding: 8px 0 6px
+        }
+
+        .MathJax_MenuClose:hover {
+            color: white !important;
+            border: 2px solid #CCC !important
+        }
+
+        .MathJax_MenuClose:hover span {
+            background-color: #CCC !important
+        }
+
+        .MathJax_MenuClose:hover:focus {
+            outline: none
+        }
+    </style>
+    <style type="text/css">
+        .MathJax_Preview .MJXf-math {
+            color: inherit !important
+        }
+    </style>
+    <style type="text/css">
+        .MJX_Assistive_MathML {
+            position: absolute !important;
+            top: 0;
+            left: 0;
+            clip: rect(1px, 1px, 1px, 1px);
+            padding: 1px 0 0 0 !important;
+            border: 0 !important;
+            height: 1px !important;
+            width: 1px !important;
+            overflow: hidden !important;
+            display: block !important;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none
+        }
+
+        .MJX_Assistive_MathML.MJX_Assistive_MathML_Block {
+            width: 100% !important
+        }
+    </style>
+    <style type="text/css">
+        #MathJax_Zoom {
+            position: absolute;
+            background-color: #F0F0F0;
+            overflow: auto;
+            display: block;
+            z-index: 301;
+            padding: .5em;
+            border: 1px solid black;
+            margin: 0;
+            font-weight: normal;
+            font-style: normal;
+            text-align: left;
+            text-indent: 0;
+            text-transform: none;
+            line-height: normal;
+            letter-spacing: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            float: none;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            box-shadow: 5px 5px 15px #AAAAAA;
+            -webkit-box-shadow: 5px 5px 15px #AAAAAA;
+            -moz-box-shadow: 5px 5px 15px #AAAAAA;
+            -khtml-box-shadow: 5px 5px 15px #AAAAAA;
+            filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')
+        }
+
+        #MathJax_ZoomOverlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 300;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            background-color: white;
+            opacity: 0;
+            filter: alpha(opacity=0)
+        }
+
+        #MathJax_ZoomFrame {
+            position: relative;
+            display: inline-block;
+            height: 0;
+            width: 0
+        }
+
+        #MathJax_ZoomEventTrap {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 302;
+            display: inline-block;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            background-color: white;
+            opacity: 0;
+            filter: alpha(opacity=0)
+        }
+    </style>
+    <style type="text/css">
+        .MathJax_Preview {
+            color: #888
+        }
+
+        #MathJax_Message {
+            position: fixed;
+            left: 1em;
+            bottom: 1.5em;
+            background-color: #E6E6E6;
+            border: 1px solid #959595;
+            margin: 0px;
+            padding: 2px 8px;
+            z-index: 102;
+            color: black;
+            font-size: 80%;
+            width: auto;
+            white-space: nowrap
+        }
+
+        #MathJax_MSIE_Frame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0px;
+            z-index: 101;
+            border: 0px;
+            margin: 0px;
+            padding: 0px
+        }
+
+        .MathJax_Error {
+            color: #CC0000;
+            font-style: italic
+        }
+    </style>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="/static/js/dateutil_factory.84670a6ecfae.js?raw"
+        src="/static/js/dateutil_factory.84670a6ecfae.js?raw"></script>
+    <style type="text/css">
+        .MJXp-script {
+            font-size: .8em
+        }
+
+        .MJXp-right {
+            -webkit-transform-origin: right;
+            -moz-transform-origin: right;
+            -ms-transform-origin: right;
+            -o-transform-origin: right;
+            transform-origin: right
+        }
+
+        .MJXp-bold {
+            font-weight: bold
+        }
+
+        .MJXp-italic {
+            font-style: italic
+        }
+
+        .MJXp-scr {
+            font-family: MathJax_Script, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-frak {
+            font-family: MathJax_Fraktur, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-sf {
+            font-family: MathJax_SansSerif, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-cal {
+            font-family: MathJax_Caligraphic, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-mono {
+            font-family: MathJax_Typewriter, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-largeop {
+            font-size: 150%
+        }
+
+        .MJXp-largeop.MJXp-int {
+            vertical-align: -.2em
+        }
+
+        .MJXp-math {
+            display: inline-block;
+            line-height: 1.2;
+            text-indent: 0;
+            font-family: 'Times New Roman', Times, STIXGeneral, serif;
+            white-space: nowrap;
+            border-collapse: collapse
+        }
+
+        .MJXp-display {
+            display: block;
+            text-align: center;
+            margin: 1em 0
+        }
+
+        .MJXp-math span {
+            display: inline-block
+        }
+
+        .MJXp-box {
+            display: block !important;
+            text-align: center
+        }
+
+        .MJXp-box:after {
+            content: " "
+        }
+
+        .MJXp-rule {
+            display: block !important;
+            margin-top: .1em
+        }
+
+        .MJXp-char {
+            display: block !important
+        }
+
+        .MJXp-mo {
+            margin: 0 .15em
+        }
+
+        .MJXp-mfrac {
+            margin: 0 .125em;
+            vertical-align: .25em
+        }
+
+        .MJXp-denom {
+            display: inline-table !important;
+            width: 100%
+        }
+
+        .MJXp-denom>* {
+            display: table-row !important
+        }
+
+        .MJXp-surd {
+            vertical-align: top
+        }
+
+        .MJXp-surd>* {
+            display: block !important
+        }
+
+        .MJXp-script-box>* {
+            display: table !important;
+            height: 50%
+        }
+
+        .MJXp-script-box>*>* {
+            display: table-cell !important;
+            vertical-align: top
+        }
+
+        .MJXp-script-box>*:last-child>* {
+            vertical-align: bottom
+        }
+
+        .MJXp-script-box>*>*>* {
+            display: block !important
+        }
+
+        .MJXp-mphantom {
+            visibility: hidden
+        }
+
+        .MJXp-munderover,
+        .MJXp-munder {
+            display: inline-table !important
+        }
+
+        .MJXp-over {
+            display: inline-block !important;
+            text-align: center
+        }
+
+        .MJXp-over>* {
+            display: block !important
+        }
+
+        .MJXp-munderover>*,
+        .MJXp-munder>* {
+            display: table-row !important
+        }
+
+        .MJXp-mtable {
+            vertical-align: .25em;
+            margin: 0 .125em
+        }
+
+        .MJXp-mtable>* {
+            display: inline-table !important;
+            vertical-align: middle
+        }
+
+        .MJXp-mtr {
+            display: table-row !important
+        }
+
+        .MJXp-mtd {
+            display: table-cell !important;
+            text-align: center;
+            padding: .5em 0 0 .5em
+        }
+
+        .MJXp-mtr>.MJXp-mtd:first-child {
+            padding-left: 0
+        }
+
+        .MJXp-mtr:first-child>.MJXp-mtd {
+            padding-top: 0
+        }
+
+        .MJXp-mlabeledtr {
+            display: table-row !important
+        }
+
+        .MJXp-mlabeledtr>.MJXp-mtd:first-child {
+            padding-left: 0
+        }
+
+        .MJXp-mlabeledtr:first-child>.MJXp-mtd {
+            padding-top: 0
+        }
+
+        .MJXp-merror {
+            background-color: #FFFF88;
+            color: #CC0000;
+            border: 1px solid #CC0000;
+            padding: 1px 3px;
+            font-style: normal;
+            font-size: 90%
+        }
+
+        .MJXp-scale0 {
+            -webkit-transform: scaleX(.0);
+            -moz-transform: scaleX(.0);
+            -ms-transform: scaleX(.0);
+            -o-transform: scaleX(.0);
+            transform: scaleX(.0)
+        }
+
+        .MJXp-scale1 {
+            -webkit-transform: scaleX(.1);
+            -moz-transform: scaleX(.1);
+            -ms-transform: scaleX(.1);
+            -o-transform: scaleX(.1);
+            transform: scaleX(.1)
+        }
+
+        .MJXp-scale2 {
+            -webkit-transform: scaleX(.2);
+            -moz-transform: scaleX(.2);
+            -ms-transform: scaleX(.2);
+            -o-transform: scaleX(.2);
+            transform: scaleX(.2)
+        }
+
+        .MJXp-scale3 {
+            -webkit-transform: scaleX(.3);
+            -moz-transform: scaleX(.3);
+            -ms-transform: scaleX(.3);
+            -o-transform: scaleX(.3);
+            transform: scaleX(.3)
+        }
+
+        .MJXp-scale4 {
+            -webkit-transform: scaleX(.4);
+            -moz-transform: scaleX(.4);
+            -ms-transform: scaleX(.4);
+            -o-transform: scaleX(.4);
+            transform: scaleX(.4)
+        }
+
+        .MJXp-scale5 {
+            -webkit-transform: scaleX(.5);
+            -moz-transform: scaleX(.5);
+            -ms-transform: scaleX(.5);
+            -o-transform: scaleX(.5);
+            transform: scaleX(.5)
+        }
+
+        .MJXp-scale6 {
+            -webkit-transform: scaleX(.6);
+            -moz-transform: scaleX(.6);
+            -ms-transform: scaleX(.6);
+            -o-transform: scaleX(.6);
+            transform: scaleX(.6)
+        }
+
+        .MJXp-scale7 {
+            -webkit-transform: scaleX(.7);
+            -moz-transform: scaleX(.7);
+            -ms-transform: scaleX(.7);
+            -o-transform: scaleX(.7);
+            transform: scaleX(.7)
+        }
+
+        .MJXp-scale8 {
+            -webkit-transform: scaleX(.8);
+            -moz-transform: scaleX(.8);
+            -ms-transform: scaleX(.8);
+            -o-transform: scaleX(.8);
+            transform: scaleX(.8)
+        }
+
+        .MJXp-scale9 {
+            -webkit-transform: scaleX(.9);
+            -moz-transform: scaleX(.9);
+            -ms-transform: scaleX(.9);
+            -o-transform: scaleX(.9);
+            transform: scaleX(.9)
+        }
+
+        .MathJax_PHTML .noError {
+            font-size: 90%;
+            text-align: left;
+            color: black;
+            padding: 1px 3px;
+            border: 1px solid
+        }
+    </style>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="js/commerce/track_ecommerce_events"
+        src="/static/js/commerce/track_ecommerce_events.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="/static/js/commerce/track_ecommerce_events.0a92c313c996.js?raw"
+        src="/static/js/commerce/track_ecommerce_events.0a92c313c996.js?raw"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="js/commerce/track_ecommerce_events"
+        src="/static/js/commerce/track_ecommerce_events.js"></script>
+    <style type="text/css">
+        .MathJax_Hover_Frame {
+            border-radius: .25em;
+            -webkit-border-radius: .25em;
+            -moz-border-radius: .25em;
+            -khtml-border-radius: .25em;
+            box-shadow: 0px 0px 15px #83A;
+            -webkit-box-shadow: 0px 0px 15px #83A;
+            -moz-box-shadow: 0px 0px 15px #83A;
+            -khtml-box-shadow: 0px 0px 15px #83A;
+            border: 1px solid #A6D ! important;
+            display: inline-block;
+            position: absolute
+        }
+
+        .MathJax_Menu_Button .MathJax_Hover_Arrow {
+            position: absolute;
+            cursor: pointer;
+            display: inline-block;
+            border: 2px solid #AAA;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -khtml-border-radius: 4px;
+            font-family: 'Courier New', Courier;
+            font-size: 9px;
+            color: #F0F0F0
+        }
+
+        .MathJax_Menu_Button .MathJax_Hover_Arrow span {
+            display: block;
+            background-color: #AAA;
+            border: 1px solid;
+            border-radius: 3px;
+            line-height: 0;
+            padding: 4px
+        }
+
+        .MathJax_Hover_Arrow:hover {
+            color: white !important;
+            border: 2px solid #CCC !important
+        }
+
+        .MathJax_Hover_Arrow:hover span {
+            background-color: #CCC !important
+        }
+    </style>
+    <style type="text/css">
+        #MathJax_About {
+            position: fixed;
+            left: 50%;
+            width: auto;
+            text-align: center;
+            border: 3px outset;
+            padding: 1em 2em;
+            background-color: #DDDDDD;
+            color: black;
+            cursor: default;
+            font-family: message-box;
+            font-size: 120%;
+            font-style: normal;
+            text-indent: 0;
+            text-transform: none;
+            line-height: normal;
+            letter-spacing: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            float: none;
+            z-index: 201;
+            border-radius: 15px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -khtml-border-radius: 15px;
+            box-shadow: 0px 10px 20px #808080;
+            -webkit-box-shadow: 0px 10px 20px #808080;
+            -moz-box-shadow: 0px 10px 20px #808080;
+            -khtml-box-shadow: 0px 10px 20px #808080;
+            filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')
+        }
+
+        #MathJax_About.MathJax_MousePost {
+            outline: none
+        }
+
+        .MathJax_Menu {
+            position: absolute;
+            background-color: white;
+            color: black;
+            width: auto;
+            padding: 2px;
+            border: 1px solid #CCCCCC;
+            margin: 0;
+            cursor: default;
+            font: menu;
+            text-align: left;
+            text-indent: 0;
+            text-transform: none;
+            line-height: normal;
+            letter-spacing: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            float: none;
+            z-index: 201;
+            box-shadow: 0px 10px 20px #808080;
+            -webkit-box-shadow: 0px 10px 20px #808080;
+            -moz-box-shadow: 0px 10px 20px #808080;
+            -khtml-box-shadow: 0px 10px 20px #808080;
+            filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')
+        }
+
+        .MathJax_MenuItem {
+            padding: 2px 2em;
+            background: transparent
+        }
+
+        .MathJax_MenuArrow {
+            position: absolute;
+            right: .5em;
+            padding-top: .25em;
+            color: #666666;
+            font-size: .75em
+        }
+
+        .MathJax_MenuActive .MathJax_MenuArrow {
+            color: white
+        }
+
+        .MathJax_MenuArrow.RTL {
+            left: .5em;
+            right: auto
+        }
+
+        .MathJax_MenuCheck {
+            position: absolute;
+            left: .7em
+        }
+
+        .MathJax_MenuCheck.RTL {
+            right: .7em;
+            left: auto
+        }
+
+        .MathJax_MenuRadioCheck {
+            position: absolute;
+            left: 1em
+        }
+
+        .MathJax_MenuRadioCheck.RTL {
+            right: 1em;
+            left: auto
+        }
+
+        .MathJax_MenuLabel {
+            padding: 2px 2em 4px 1.33em;
+            font-style: italic
+        }
+
+        .MathJax_MenuRule {
+            border-top: 1px solid #CCCCCC;
+            margin: 4px 1px 0px
+        }
+
+        .MathJax_MenuDisabled {
+            color: GrayText
+        }
+
+        .MathJax_MenuActive {
+            background-color: Highlight;
+            color: HighlightText
+        }
+
+        .MathJax_MenuDisabled:focus,
+        .MathJax_MenuLabel:focus {
+            background-color: #E8E8E8
+        }
+
+        .MathJax_ContextMenu:focus {
+            outline: none
+        }
+
+        .MathJax_ContextMenu .MathJax_MenuItem:focus {
+            outline: none
+        }
+
+        #MathJax_AboutClose {
+            top: .2em;
+            right: .2em
+        }
+
+        .MathJax_Menu .MathJax_MenuClose {
+            top: -10px;
+            left: -10px
+        }
+
+        .MathJax_MenuClose {
+            position: absolute;
+            cursor: pointer;
+            display: inline-block;
+            border: 2px solid #AAA;
+            border-radius: 18px;
+            -webkit-border-radius: 18px;
+            -moz-border-radius: 18px;
+            -khtml-border-radius: 18px;
+            font-family: 'Courier New', Courier;
+            font-size: 24px;
+            color: #F0F0F0
+        }
+
+        .MathJax_MenuClose span {
+            display: block;
+            background-color: #AAA;
+            border: 1.5px solid;
+            border-radius: 18px;
+            -webkit-border-radius: 18px;
+            -moz-border-radius: 18px;
+            -khtml-border-radius: 18px;
+            line-height: 0;
+            padding: 8px 0 6px
+        }
+
+        .MathJax_MenuClose:hover {
+            color: white !important;
+            border: 2px solid #CCC !important
+        }
+
+        .MathJax_MenuClose:hover span {
+            background-color: #CCC !important
+        }
+
+        .MathJax_MenuClose:hover:focus {
+            outline: none
+        }
+    </style>
+    <style type="text/css">
+        .MathJax_Preview .MJXf-math {
+            color: inherit !important
+        }
+    </style>
+    <style type="text/css">
+        .MJX_Assistive_MathML {
+            position: absolute !important;
+            top: 0;
+            left: 0;
+            clip: rect(1px, 1px, 1px, 1px);
+            padding: 1px 0 0 0 !important;
+            border: 0 !important;
+            height: 1px !important;
+            width: 1px !important;
+            overflow: hidden !important;
+            display: block !important;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none
+        }
+
+        .MJX_Assistive_MathML.MJX_Assistive_MathML_Block {
+            width: 100% !important
+        }
+    </style>
+    <style type="text/css">
+        #MathJax_Zoom {
+            position: absolute;
+            background-color: #F0F0F0;
+            overflow: auto;
+            display: block;
+            z-index: 301;
+            padding: .5em;
+            border: 1px solid black;
+            margin: 0;
+            font-weight: normal;
+            font-style: normal;
+            text-align: left;
+            text-indent: 0;
+            text-transform: none;
+            line-height: normal;
+            letter-spacing: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            float: none;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            box-shadow: 5px 5px 15px #AAAAAA;
+            -webkit-box-shadow: 5px 5px 15px #AAAAAA;
+            -moz-box-shadow: 5px 5px 15px #AAAAAA;
+            -khtml-box-shadow: 5px 5px 15px #AAAAAA;
+            filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')
+        }
+
+        #MathJax_ZoomOverlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 300;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            background-color: white;
+            opacity: 0;
+            filter: alpha(opacity=0)
+        }
+
+        #MathJax_ZoomFrame {
+            position: relative;
+            display: inline-block;
+            height: 0;
+            width: 0
+        }
+
+        #MathJax_ZoomEventTrap {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 302;
+            display: inline-block;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            background-color: white;
+            opacity: 0;
+            filter: alpha(opacity=0)
+        }
+    </style>
+    <style type="text/css">
+        .MathJax_Preview {
+            color: #888
+        }
+
+        #MathJax_Message {
+            position: fixed;
+            left: 1em;
+            bottom: 1.5em;
+            background-color: #E6E6E6;
+            border: 1px solid #959595;
+            margin: 0px;
+            padding: 2px 8px;
+            z-index: 102;
+            color: black;
+            font-size: 80%;
+            width: auto;
+            white-space: nowrap
+        }
+
+        #MathJax_MSIE_Frame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0px;
+            z-index: 101;
+            border: 0px;
+            margin: 0px;
+            padding: 0px
+        }
+
+        .MathJax_Error {
+            color: #CC0000;
+            font-style: italic
+        }
+    </style>
+    <style type="text/css">
+        .MJXp-script {
+            font-size: .8em
+        }
+
+        .MJXp-right {
+            -webkit-transform-origin: right;
+            -moz-transform-origin: right;
+            -ms-transform-origin: right;
+            -o-transform-origin: right;
+            transform-origin: right
+        }
+
+        .MJXp-bold {
+            font-weight: bold
+        }
+
+        .MJXp-italic {
+            font-style: italic
+        }
+
+        .MJXp-scr {
+            font-family: MathJax_Script, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-frak {
+            font-family: MathJax_Fraktur, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-sf {
+            font-family: MathJax_SansSerif, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-cal {
+            font-family: MathJax_Caligraphic, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-mono {
+            font-family: MathJax_Typewriter, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-largeop {
+            font-size: 150%
+        }
+
+        .MJXp-largeop.MJXp-int {
+            vertical-align: -.2em
+        }
+
+        .MJXp-math {
+            display: inline-block;
+            line-height: 1.2;
+            text-indent: 0;
+            font-family: 'Times New Roman', Times, STIXGeneral, serif;
+            white-space: nowrap;
+            border-collapse: collapse
+        }
+
+        .MJXp-display {
+            display: block;
+            text-align: center;
+            margin: 1em 0
+        }
+
+        .MJXp-math span {
+            display: inline-block
+        }
+
+        .MJXp-box {
+            display: block !important;
+            text-align: center
+        }
+
+        .MJXp-box:after {
+            content: " "
+        }
+
+        .MJXp-rule {
+            display: block !important;
+            margin-top: .1em
+        }
+
+        .MJXp-char {
+            display: block !important
+        }
+
+        .MJXp-mo {
+            margin: 0 .15em
+        }
+
+        .MJXp-mfrac {
+            margin: 0 .125em;
+            vertical-align: .25em
+        }
+
+        .MJXp-denom {
+            display: inline-table !important;
+            width: 100%
+        }
+
+        .MJXp-denom>* {
+            display: table-row !important
+        }
+
+        .MJXp-surd {
+            vertical-align: top
+        }
+
+        .MJXp-surd>* {
+            display: block !important
+        }
+
+        .MJXp-script-box>* {
+            display: table !important;
+            height: 50%
+        }
+
+        .MJXp-script-box>*>* {
+            display: table-cell !important;
+            vertical-align: top
+        }
+
+        .MJXp-script-box>*:last-child>* {
+            vertical-align: bottom
+        }
+
+        .MJXp-script-box>*>*>* {
+            display: block !important
+        }
+
+        .MJXp-mphantom {
+            visibility: hidden
+        }
+
+        .MJXp-munderover,
+        .MJXp-munder {
+            display: inline-table !important
+        }
+
+        .MJXp-over {
+            display: inline-block !important;
+            text-align: center
+        }
+
+        .MJXp-over>* {
+            display: block !important
+        }
+
+        .MJXp-munderover>*,
+        .MJXp-munder>* {
+            display: table-row !important
+        }
+
+        .MJXp-mtable {
+            vertical-align: .25em;
+            margin: 0 .125em
+        }
+
+        .MJXp-mtable>* {
+            display: inline-table !important;
+            vertical-align: middle
+        }
+
+        .MJXp-mtr {
+            display: table-row !important
+        }
+
+        .MJXp-mtd {
+            display: table-cell !important;
+            text-align: center;
+            padding: .5em 0 0 .5em
+        }
+
+        .MJXp-mtr>.MJXp-mtd:first-child {
+            padding-left: 0
+        }
+
+        .MJXp-mtr:first-child>.MJXp-mtd {
+            padding-top: 0
+        }
+
+        .MJXp-mlabeledtr {
+            display: table-row !important
+        }
+
+        .MJXp-mlabeledtr>.MJXp-mtd:first-child {
+            padding-left: 0
+        }
+
+        .MJXp-mlabeledtr:first-child>.MJXp-mtd {
+            padding-top: 0
+        }
+
+        .MJXp-merror {
+            background-color: #FFFF88;
+            color: #CC0000;
+            border: 1px solid #CC0000;
+            padding: 1px 3px;
+            font-style: normal;
+            font-size: 90%
+        }
+
+        .MJXp-scale0 {
+            -webkit-transform: scaleX(.0);
+            -moz-transform: scaleX(.0);
+            -ms-transform: scaleX(.0);
+            -o-transform: scaleX(.0);
+            transform: scaleX(.0)
+        }
+
+        .MJXp-scale1 {
+            -webkit-transform: scaleX(.1);
+            -moz-transform: scaleX(.1);
+            -ms-transform: scaleX(.1);
+            -o-transform: scaleX(.1);
+            transform: scaleX(.1)
+        }
+
+        .MJXp-scale2 {
+            -webkit-transform: scaleX(.2);
+            -moz-transform: scaleX(.2);
+            -ms-transform: scaleX(.2);
+            -o-transform: scaleX(.2);
+            transform: scaleX(.2)
+        }
+
+        .MJXp-scale3 {
+            -webkit-transform: scaleX(.3);
+            -moz-transform: scaleX(.3);
+            -ms-transform: scaleX(.3);
+            -o-transform: scaleX(.3);
+            transform: scaleX(.3)
+        }
+
+        .MJXp-scale4 {
+            -webkit-transform: scaleX(.4);
+            -moz-transform: scaleX(.4);
+            -ms-transform: scaleX(.4);
+            -o-transform: scaleX(.4);
+            transform: scaleX(.4)
+        }
+
+        .MJXp-scale5 {
+            -webkit-transform: scaleX(.5);
+            -moz-transform: scaleX(.5);
+            -ms-transform: scaleX(.5);
+            -o-transform: scaleX(.5);
+            transform: scaleX(.5)
+        }
+
+        .MJXp-scale6 {
+            -webkit-transform: scaleX(.6);
+            -moz-transform: scaleX(.6);
+            -ms-transform: scaleX(.6);
+            -o-transform: scaleX(.6);
+            transform: scaleX(.6)
+        }
+
+        .MJXp-scale7 {
+            -webkit-transform: scaleX(.7);
+            -moz-transform: scaleX(.7);
+            -ms-transform: scaleX(.7);
+            -o-transform: scaleX(.7);
+            transform: scaleX(.7)
+        }
+
+        .MJXp-scale8 {
+            -webkit-transform: scaleX(.8);
+            -moz-transform: scaleX(.8);
+            -ms-transform: scaleX(.8);
+            -o-transform: scaleX(.8);
+            transform: scaleX(.8)
+        }
+
+        .MJXp-scale9 {
+            -webkit-transform: scaleX(.9);
+            -moz-transform: scaleX(.9);
+            -ms-transform: scaleX(.9);
+            -o-transform: scaleX(.9);
+            transform: scaleX(.9)
+        }
+
+        .MathJax_PHTML .noError {
+            font-size: 90%;
+            text-align: left;
+            color: black;
+            padding: 1px 3px;
+            border: 1px solid
+        }
+    </style>
+    <style type="text/css">
+        .MathJax_Hover_Frame {
+            border-radius: .25em;
+            -webkit-border-radius: .25em;
+            -moz-border-radius: .25em;
+            -khtml-border-radius: .25em;
+            box-shadow: 0px 0px 15px #83A;
+            -webkit-box-shadow: 0px 0px 15px #83A;
+            -moz-box-shadow: 0px 0px 15px #83A;
+            -khtml-box-shadow: 0px 0px 15px #83A;
+            border: 1px solid #A6D ! important;
+            display: inline-block;
+            position: absolute
+        }
+
+        .MathJax_Menu_Button .MathJax_Hover_Arrow {
+            position: absolute;
+            cursor: pointer;
+            display: inline-block;
+            border: 2px solid #AAA;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -khtml-border-radius: 4px;
+            font-family: 'Courier New', Courier;
+            font-size: 9px;
+            color: #F0F0F0
+        }
+
+        .MathJax_Menu_Button .MathJax_Hover_Arrow span {
+            display: block;
+            background-color: #AAA;
+            border: 1px solid;
+            border-radius: 3px;
+            line-height: 0;
+            padding: 4px
+        }
+
+        .MathJax_Hover_Arrow:hover {
+            color: white !important;
+            border: 2px solid #CCC !important
+        }
+
+        .MathJax_Hover_Arrow:hover span {
+            background-color: #CCC !important
+        }
+    </style>
+    <style type="text/css">
+        #MathJax_About {
+            position: fixed;
+            left: 50%;
+            width: auto;
+            text-align: center;
+            border: 3px outset;
+            padding: 1em 2em;
+            background-color: #DDDDDD;
+            color: black;
+            cursor: default;
+            font-family: message-box;
+            font-size: 120%;
+            font-style: normal;
+            text-indent: 0;
+            text-transform: none;
+            line-height: normal;
+            letter-spacing: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            float: none;
+            z-index: 201;
+            border-radius: 15px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -khtml-border-radius: 15px;
+            box-shadow: 0px 10px 20px #808080;
+            -webkit-box-shadow: 0px 10px 20px #808080;
+            -moz-box-shadow: 0px 10px 20px #808080;
+            -khtml-box-shadow: 0px 10px 20px #808080;
+            filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')
+        }
+
+        #MathJax_About.MathJax_MousePost {
+            outline: none
+        }
+
+        .MathJax_Menu {
+            position: absolute;
+            background-color: white;
+            color: black;
+            width: auto;
+            padding: 2px;
+            border: 1px solid #CCCCCC;
+            margin: 0;
+            cursor: default;
+            font: menu;
+            text-align: left;
+            text-indent: 0;
+            text-transform: none;
+            line-height: normal;
+            letter-spacing: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            float: none;
+            z-index: 201;
+            box-shadow: 0px 10px 20px #808080;
+            -webkit-box-shadow: 0px 10px 20px #808080;
+            -moz-box-shadow: 0px 10px 20px #808080;
+            -khtml-box-shadow: 0px 10px 20px #808080;
+            filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')
+        }
+
+        .MathJax_MenuItem {
+            padding: 2px 2em;
+            background: transparent
+        }
+
+        .MathJax_MenuArrow {
+            position: absolute;
+            right: .5em;
+            padding-top: .25em;
+            color: #666666;
+            font-size: .75em
+        }
+
+        .MathJax_MenuActive .MathJax_MenuArrow {
+            color: white
+        }
+
+        .MathJax_MenuArrow.RTL {
+            left: .5em;
+            right: auto
+        }
+
+        .MathJax_MenuCheck {
+            position: absolute;
+            left: .7em
+        }
+
+        .MathJax_MenuCheck.RTL {
+            right: .7em;
+            left: auto
+        }
+
+        .MathJax_MenuRadioCheck {
+            position: absolute;
+            left: 1em
+        }
+
+        .MathJax_MenuRadioCheck.RTL {
+            right: 1em;
+            left: auto
+        }
+
+        .MathJax_MenuLabel {
+            padding: 2px 2em 4px 1.33em;
+            font-style: italic
+        }
+
+        .MathJax_MenuRule {
+            border-top: 1px solid #CCCCCC;
+            margin: 4px 1px 0px
+        }
+
+        .MathJax_MenuDisabled {
+            color: GrayText
+        }
+
+        .MathJax_MenuActive {
+            background-color: Highlight;
+            color: HighlightText
+        }
+
+        .MathJax_MenuDisabled:focus,
+        .MathJax_MenuLabel:focus {
+            background-color: #E8E8E8
+        }
+
+        .MathJax_ContextMenu:focus {
+            outline: none
+        }
+
+        .MathJax_ContextMenu .MathJax_MenuItem:focus {
+            outline: none
+        }
+
+        #MathJax_AboutClose {
+            top: .2em;
+            right: .2em
+        }
+
+        .MathJax_Menu .MathJax_MenuClose {
+            top: -10px;
+            left: -10px
+        }
+
+        .MathJax_MenuClose {
+            position: absolute;
+            cursor: pointer;
+            display: inline-block;
+            border: 2px solid #AAA;
+            border-radius: 18px;
+            -webkit-border-radius: 18px;
+            -moz-border-radius: 18px;
+            -khtml-border-radius: 18px;
+            font-family: 'Courier New', Courier;
+            font-size: 24px;
+            color: #F0F0F0
+        }
+
+        .MathJax_MenuClose span {
+            display: block;
+            background-color: #AAA;
+            border: 1.5px solid;
+            border-radius: 18px;
+            -webkit-border-radius: 18px;
+            -moz-border-radius: 18px;
+            -khtml-border-radius: 18px;
+            line-height: 0;
+            padding: 8px 0 6px
+        }
+
+        .MathJax_MenuClose:hover {
+            color: white !important;
+            border: 2px solid #CCC !important
+        }
+
+        .MathJax_MenuClose:hover span {
+            background-color: #CCC !important
+        }
+
+        .MathJax_MenuClose:hover:focus {
+            outline: none
+        }
+    </style>
+    <style type="text/css">
+        .MathJax_Preview .MJXf-math {
+            color: inherit !important
+        }
+    </style>
+    <style type="text/css">
+        .MJX_Assistive_MathML {
+            position: absolute !important;
+            top: 0;
+            left: 0;
+            clip: rect(1px, 1px, 1px, 1px);
+            padding: 1px 0 0 0 !important;
+            border: 0 !important;
+            height: 1px !important;
+            width: 1px !important;
+            overflow: hidden !important;
+            display: block !important;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none
+        }
+
+        .MJX_Assistive_MathML.MJX_Assistive_MathML_Block {
+            width: 100% !important
+        }
+    </style>
+    <style type="text/css">
+        #MathJax_Zoom {
+            position: absolute;
+            background-color: #F0F0F0;
+            overflow: auto;
+            display: block;
+            z-index: 301;
+            padding: .5em;
+            border: 1px solid black;
+            margin: 0;
+            font-weight: normal;
+            font-style: normal;
+            text-align: left;
+            text-indent: 0;
+            text-transform: none;
+            line-height: normal;
+            letter-spacing: normal;
+            word-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            float: none;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            box-shadow: 5px 5px 15px #AAAAAA;
+            -webkit-box-shadow: 5px 5px 15px #AAAAAA;
+            -moz-box-shadow: 5px 5px 15px #AAAAAA;
+            -khtml-box-shadow: 5px 5px 15px #AAAAAA;
+            filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')
+        }
+
+        #MathJax_ZoomOverlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 300;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            background-color: white;
+            opacity: 0;
+            filter: alpha(opacity=0)
+        }
+
+        #MathJax_ZoomFrame {
+            position: relative;
+            display: inline-block;
+            height: 0;
+            width: 0
+        }
+
+        #MathJax_ZoomEventTrap {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 302;
+            display: inline-block;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            background-color: white;
+            opacity: 0;
+            filter: alpha(opacity=0)
+        }
+    </style>
+    <style type="text/css">
+        .MathJax_Preview {
+            color: #888
+        }
+
+        #MathJax_Message {
+            position: fixed;
+            left: 1em;
+            bottom: 1.5em;
+            background-color: #E6E6E6;
+            border: 1px solid #959595;
+            margin: 0px;
+            padding: 2px 8px;
+            z-index: 102;
+            color: black;
+            font-size: 80%;
+            width: auto;
+            white-space: nowrap
+        }
+
+        #MathJax_MSIE_Frame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0px;
+            z-index: 101;
+            border: 0px;
+            margin: 0px;
+            padding: 0px
+        }
+
+        .MathJax_Error {
+            color: #CC0000;
+            font-style: italic
+        }
+    </style>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="/static/js/dateutil_factory.84670a6ecfae.js?raw"
+        src="/static/js/dateutil_factory.84670a6ecfae.js?raw"></script>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="/static/js/commerce/track_ecommerce_events.0a92c313c996.js?raw"
+        src="/static/js/commerce/track_ecommerce_events.0a92c313c996.js?raw"></script>
+    <style type="text/css">
+        .MJXp-script {
+            font-size: .8em
+        }
+
+        .MJXp-right {
+            -webkit-transform-origin: right;
+            -moz-transform-origin: right;
+            -ms-transform-origin: right;
+            -o-transform-origin: right;
+            transform-origin: right
+        }
+
+        .MJXp-bold {
+            font-weight: bold
+        }
+
+        .MJXp-italic {
+            font-style: italic
+        }
+
+        .MJXp-scr {
+            font-family: MathJax_Script, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-frak {
+            font-family: MathJax_Fraktur, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-sf {
+            font-family: MathJax_SansSerif, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-cal {
+            font-family: MathJax_Caligraphic, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-mono {
+            font-family: MathJax_Typewriter, 'Times New Roman', Times, STIXGeneral, serif
+        }
+
+        .MJXp-largeop {
+            font-size: 150%
+        }
+
+        .MJXp-largeop.MJXp-int {
+            vertical-align: -.2em
+        }
+
+        .MJXp-math {
+            display: inline-block;
+            line-height: 1.2;
+            text-indent: 0;
+            font-family: 'Times New Roman', Times, STIXGeneral, serif;
+            white-space: nowrap;
+            border-collapse: collapse
+        }
+
+        .MJXp-display {
+            display: block;
+            text-align: center;
+            margin: 1em 0
+        }
+
+        .MJXp-math span {
+            display: inline-block
+        }
+
+        .MJXp-box {
+            display: block !important;
+            text-align: center
+        }
+
+        .MJXp-box:after {
+            content: " "
+        }
+
+        .MJXp-rule {
+            display: block !important;
+            margin-top: .1em
+        }
+
+        .MJXp-char {
+            display: block !important
+        }
+
+        .MJXp-mo {
+            margin: 0 .15em
+        }
+
+        .MJXp-mfrac {
+            margin: 0 .125em;
+            vertical-align: .25em
+        }
+
+        .MJXp-denom {
+            display: inline-table !important;
+            width: 100%
+        }
+
+        .MJXp-denom>* {
+            display: table-row !important
+        }
+
+        .MJXp-surd {
+            vertical-align: top
+        }
+
+        .MJXp-surd>* {
+            display: block !important
+        }
+
+        .MJXp-script-box>* {
+            display: table !important;
+            height: 50%
+        }
+
+        .MJXp-script-box>*>* {
+            display: table-cell !important;
+            vertical-align: top
+        }
+
+        .MJXp-script-box>*:last-child>* {
+            vertical-align: bottom
+        }
+
+        .MJXp-script-box>*>*>* {
+            display: block !important
+        }
+
+        .MJXp-mphantom {
+            visibility: hidden
+        }
+
+        .MJXp-munderover,
+        .MJXp-munder {
+            display: inline-table !important
+        }
+
+        .MJXp-over {
+            display: inline-block !important;
+            text-align: center
+        }
+
+        .MJXp-over>* {
+            display: block !important
+        }
+
+        .MJXp-munderover>*,
+        .MJXp-munder>* {
+            display: table-row !important
+        }
+
+        .MJXp-mtable {
+            vertical-align: .25em;
+            margin: 0 .125em
+        }
+
+        .MJXp-mtable>* {
+            display: inline-table !important;
+            vertical-align: middle
+        }
+
+        .MJXp-mtr {
+            display: table-row !important
+        }
+
+        .MJXp-mtd {
+            display: table-cell !important;
+            text-align: center;
+            padding: .5em 0 0 .5em
+        }
+
+        .MJXp-mtr>.MJXp-mtd:first-child {
+            padding-left: 0
+        }
+
+        .MJXp-mtr:first-child>.MJXp-mtd {
+            padding-top: 0
+        }
+
+        .MJXp-mlabeledtr {
+            display: table-row !important
+        }
+
+        .MJXp-mlabeledtr>.MJXp-mtd:first-child {
+            padding-left: 0
+        }
+
+        .MJXp-mlabeledtr:first-child>.MJXp-mtd {
+            padding-top: 0
+        }
+
+        .MJXp-merror {
+            background-color: #FFFF88;
+            color: #CC0000;
+            border: 1px solid #CC0000;
+            padding: 1px 3px;
+            font-style: normal;
+            font-size: 90%
+        }
+
+        .MJXp-scale0 {
+            -webkit-transform: scaleX(.0);
+            -moz-transform: scaleX(.0);
+            -ms-transform: scaleX(.0);
+            -o-transform: scaleX(.0);
+            transform: scaleX(.0)
+        }
+
+        .MJXp-scale1 {
+            -webkit-transform: scaleX(.1);
+            -moz-transform: scaleX(.1);
+            -ms-transform: scaleX(.1);
+            -o-transform: scaleX(.1);
+            transform: scaleX(.1)
+        }
+
+        .MJXp-scale2 {
+            -webkit-transform: scaleX(.2);
+            -moz-transform: scaleX(.2);
+            -ms-transform: scaleX(.2);
+            -o-transform: scaleX(.2);
+            transform: scaleX(.2)
+        }
+
+        .MJXp-scale3 {
+            -webkit-transform: scaleX(.3);
+            -moz-transform: scaleX(.3);
+            -ms-transform: scaleX(.3);
+            -o-transform: scaleX(.3);
+            transform: scaleX(.3)
+        }
+
+        .MJXp-scale4 {
+            -webkit-transform: scaleX(.4);
+            -moz-transform: scaleX(.4);
+            -ms-transform: scaleX(.4);
+            -o-transform: scaleX(.4);
+            transform: scaleX(.4)
+        }
+
+        .MJXp-scale5 {
+            -webkit-transform: scaleX(.5);
+            -moz-transform: scaleX(.5);
+            -ms-transform: scaleX(.5);
+            -o-transform: scaleX(.5);
+            transform: scaleX(.5)
+        }
+
+        .MJXp-scale6 {
+            -webkit-transform: scaleX(.6);
+            -moz-transform: scaleX(.6);
+            -ms-transform: scaleX(.6);
+            -o-transform: scaleX(.6);
+            transform: scaleX(.6)
+        }
+
+        .MJXp-scale7 {
+            -webkit-transform: scaleX(.7);
+            -moz-transform: scaleX(.7);
+            -ms-transform: scaleX(.7);
+            -o-transform: scaleX(.7);
+            transform: scaleX(.7)
+        }
+
+        .MJXp-scale8 {
+            -webkit-transform: scaleX(.8);
+            -moz-transform: scaleX(.8);
+            -ms-transform: scaleX(.8);
+            -o-transform: scaleX(.8);
+            transform: scaleX(.8)
+        }
+
+        .MJXp-scale9 {
+            -webkit-transform: scaleX(.9);
+            -moz-transform: scaleX(.9);
+            -ms-transform: scaleX(.9);
+            -o-transform: scaleX(.9);
+            transform: scaleX(.9)
+        }
+
+        .MathJax_PHTML .noError {
+            font-size: 90%;
+            text-align: left;
+            color: black;
+            padding: 1px 3px;
+            border: 1px solid
+        }
+    </style>
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
+        data-requiremodule="js/commerce/track_ecommerce_events"
+        src="/static/js/commerce/track_ecommerce_events.js"></script>
+</head>
+
+<body class="ltr view-in-course view-courseware courseware lang_vi vsc-initialized touch-based-device">
+    <div id="MathJax_Message" style="display: none;"></div>
+    <div id="MathJax_Message" style="display: none;"></div>
+    <div id="MathJax_Message" style="display: none;"></div>
+
+
+    <div id="page-prompt"></div>
+    <div class="window-wrap" dir="ltr">
+
+        <!--[if lte IE 9]>
+<div class="ie-banner" aria-hidden="true"><strong>Cảnh báo:</strong> Trình duyệt của bạn không được hỗ trợ đầy đủ. Chúng tôi khuyên bạn nên sử dụng <a href="https://www.google.com/chrome" rel="noopener" target="_blank">Chrome</a> hoặc <a href="http://www.mozilla.org/firefox" rel="noopener" target="_blank">Firefox</a>.</div>
+<![endif]-->
+
+        <div class="marketing-hero"></div>
+
+        <div class="content-wrapper main-container" id="content" dir="ltr">
+
+            <script type="text/template" id="image-modal-tpl">
+    <div class="wrapper-modal wrapper-modal-image">
+  <section class="image-link">
+    <%= smallHTML%> <% // xss-lint: disable=underscore-not-escaped %>
+    <a href="#" class="modal-ui-icon action-fullscreen" role="button">
+      <span class="label">
+        <span class="icon fa fa-arrows-alt fa-large" aria-hidden="true"></span> <%- gettext("Fullscreen") %>
+      </span>
+    </a>
+  </section>
+
+  <section class="image-modal">
+    <section class="image-content">
+      <div class="image-wrapper">
+        <img alt="<%- largeALT %>, <%- gettext('Large') %>" src="<%- largeSRC %>" />
+      </div>
+
+      <a href="#" class="modal-ui-icon action-close" role="button">
+        <span class="label">
+          <span class="icon fa fa-remove fa-large" aria-hidden="true"></span> <%- gettext("Close") %>
+        </span>
+      </a>
+
+      <ul class="image-controls">
+        <li class="image-control">
+          <a href="#" class="modal-ui-icon action-zoom-in" role="button">
+            <span class="label">
+              <span class="icon fa fa fa-search-plus fa-large" aria-hidden="true"></span> <%- gettext("Zoom In") %>
+            </span>
+          </a>
+        </li>
+
+        <li class="image-control">
+          <a href="#" class="modal-ui-icon action-zoom-out is-disabled" aria-disabled="true" role="button">
+            <span class="label">
+              <span class="icon fa fa fa-search-minus fa-large" aria-hidden="true"></span> <%- gettext("Zoom Out") %>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </section>
+</div>
+
+</script>
+
+            <div class="message-banner" aria-live="polite"></div>
+            <script type="text/template" id="proctored-exam-status-tpl">
+            <div class="exam-timer">
+    <%
+        function gtLtEscape(str) {
+            return String(str)
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+        }
+    %>
+    <div id="turn_in_exam_id" class="pull-right turn_in_exam" role="region" aria-label="<%- gettext('Exam timer and end exam button')%>">
+        <span>
+            <% if(attempt_status !== 'ready_to_submit') {%>
+                <button class="exam-button-turn-in-exam btn btn-pl-primary btn-primary">
+                    <%- gettext("End My Exam") %>
+                </button>
+            <% } %>
+        </span>
+        <span class="sr timer-announce" aria-live="assertive"></span>
+        <span class="exam-timer-clock">
+            <h3 id="time_remaining_id">
+                <b>
+                </b>
+            </h3>
+            <button role="button" id="toggle_timer" class="btn btn-primary" aria-label="<%- gettext("Hide Timer") %>" aria-pressed="false">
+                <i class="fa fa-eye-slash" aria-hidden="true"></i>
+            </button>
+        </span>
+    </div>
+    <div class='exam-text js-exam-text' data-show-long="true">
+        <% // xss-lint: disable=underscore-not-escaped %>
+        <%= interpolate_text(gettext('You are taking "{exam_link}" as {exam_type}. '), {exam_link: "<a href='" + exam_url_path + "'>"+gtLtEscape(exam_display_name)+"</a>", exam_type: gettext('a timed exam')}) %>
+        <span class="js-exam-additional-text" aria-hidden="false">
+            <%- gettext('The timer on the right shows the time remaining in the exam.') %>
+            <%- gettext('To receive credit for problems, you must select "Submit" for each problem before you select "End My Exam".') %>
+        </span>
+        <button class="js-toggle-show-more btn btn-link" data-show-more-text="<%- gettext('Show More') %>" data-show-less-text="<%- gettext('Show Less') %>">
+            <%- gettext('Show Less') %>
+        </button>
+    </div>
+</div>
+
+        </script>
+            <div class="proctored_exam_status"></div>
+
+
+
+
+
+            <div class="container" lang="en">
+                <div class="course-wrapper" role="presentation">
+
+                    <section class="course-content" id="course-content">
+
+
+                        <main id="main" tabindex="-1" aria-label="Content">
+
+
+                            <div class="xblock xblock-student_view xblock-student_view-sequential xmodule_display xmodule_SequenceModule xblock-initialized"
+                                data-course-id="" data-type="Sequence" data-init="XBlockToXModuleShim"
+                                data-runtime-class="LmsRuntime" data-runtime-version="1" data-block-type="sequential"
+                                data-usage-id="sequential+block@a307b83db9374d22ba109ddab42d9171"
+                                data-request-token="22e67fd4369911ef923923219c7798f4" data-graded="True"
+                                data-has-score="False">
+
+
+
+
+                                <div id="sequence_a307b83db9374d22ba109ddab42d9171" class="sequence" data-position="1"
+                                    data-next-url="/courses//courseware/7595cc8cbe5a4d858e49221f95c0bb84/654b50c130954f529b8205111840e4e5/?child=first"
+                                    data-prev-url="/courses//courseware/7595cc8cbe5a4d858e49221f95c0bb84/5da58e7c40b84574a748bdab9e80d4df/?child=last"
+                                    data-save-position="true" data-show-completion="true">
+
+                                    <div class="sequence-list-nav">
+                                        <div class="sequence-nav sequence-nav--full">
+
+                                        </div>
+                                        <div class="sequence-nav">
+
+
+                                        </div>
+                                    </div>
+                                    <div class="sequence-content-wrapper">
+                                        <div class="quiz-map-wrapper">
+                                            <div class="quiz-map-container">
+                                                <div class="quiz-map-user-info">
+                                                    <span>Make by Kokomi</span>
+                                                    <br>
+                                                    <span>Contact me: phamngocminh1230@gmail.com</span>
+                                                </div>
+                                                <div class="quiz-map" id="quizmap"></div>
+                                                <div class="quiz-map-user-info" style="margin-bottom: 10px;" id="res">
+                                                </div>
+                                                <div class="quiz-map-user-info" style="margin-bottom: 10px;"
+                                                    id="checkquiz">
+                                                    <button type="button"
+                                                        style="margin-bottom: 10px; margin-right: 5px;"
+                                                        class="btn btn-primary" onclick="checkQuizAns()">
+                                                        Nộp bài
+                                                    </button>
+                                                </div>
+
+                                                <script>
+                                                    function checkQuizAns() {
+                                                        const checkquiz = document.getElementById("checkquiz");
+                                                        checkquiz.style.display = 'none';
+                                                        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                                                        checkboxes.forEach(checkbox => {
+                                                            checkbox.disabled = true;
+                                                        });
+
+                                                        var quizs = document.querySelectorAll('.quizzzzzz');
+
+                                                        var num_q = quizs.length;
+                                                        var num_correct = 0;
+
+                                                        for (let i = 0; i < quizs.length; i++) {
+                                                            let flag = true;
+
+                                                            let anss = quizs[i].querySelectorAll('input[type="checkbox"]');
+                                                            for (let j = 0; j < anss.length; j++) {
+                                                                let data_a = anss[j].dataset.a;
+                                                                let an = anss[j].checked ? '1' : '0';
+
+                                                                let lab = anss[j].parentNode.querySelectorAll('label')[0];
+
+                                                                if (parseInt(data_a) - parseInt(an) != 0) {
+                                                                    console.log(parseInt(data_a) - parseInt(an));
+                                                                    if (flag) flag = false;
+                                                                }
+
+                                                                if (parseInt(data_a) == 1) {
+                                                                    lab.insertAdjacentHTML('beforeend', '<span aria-hidden="true" class="status-icon"></span>');
+                                                                }
+                                                            }
+
+                                                            if (flag) {
+                                                                num_correct += 1;
+                                                            }
+                                                            else {
+                                                                quizs[i].insertAdjacentHTML('beforeend', '<span class="icon fa fa-close" style="color:red;" aria-hidden="true"></span>')
+                                                            }
+                                                        }
+
+                                                        //
+                                                        res_html = `
+                                                            <span style="font-size:18px!important; font-weight:bold!important">Số câu đúng: ${num_correct} / ${num_q}</span>
+                                                        `;
+                                                        document.getElementById("res").insertAdjacentHTML('beforeend', res_html);
+                                                    }
+                                                </script>
+                                            </div>
+                                        </div>
+                                        <div class="sr-is-focusable" tabindex="-1"></div>
+
+                                        <div id="seq_content" role="tabpanel" aria-labelledby="tab_0">
+
+                                            <div class="xblock xblock-student_view xblock-student_view-vertical xblock-initialized"
+                                                data-course-id="" data-init="VerticalStudentView"
+                                                data-runtime-class="LmsRuntime" data-runtime-version="1"
+                                                data-block-type="vertical" data-usage-id=""
+                                                data-request-token="22e67fd4369911ef923923219c7798f4" data-graded="True"
+                                                data-has-score="False">
+
+                                                <h2 class="hd hd-2 unit-title"><span
+                                                        style="font-size: 23px;">Quiz 30 câu ngẫu nhiên</span>
+                                                    <a href="/index.html" class="btn btn-primary" role="button"
+                                                        style="margin-left:5px;">Home</a>
+                                                </h2>
+
+                                                <div class="bookmark-button-wrapper">
+                                                    <button class="btn btn-link bookmark-button" aria-pressed="false"
+                                                        data-bookmark-id=","
+                                                        data-bookmarks-api-url="/api/bookmarks/v1/bookmarks/">
+
+                                                    </button>
+                                                </div>
+
+                                                <div class="vert-mod">
+                                                    <div class="vert vert-0"
+                                                        data-id="quiz_navigation+block@3e820ac8e82f4896b13242b1d8edebbe">
+
+                                                        <div class="xblock xblock-student_view xblock-student_view-quiz_navigation xblock-initialized"
+                                                            data-course-id="" data-init="QuizNavigationMapXBlock"
+                                                            data-runtime-class="LmsRuntime" data-runtime-version="1"
+                                                            data-block-type="quiz_navigation"
+                                                            data-usage-id="quiz_navigation+block@3e820ac8e82f4896b13242b1d8edebbe"
+                                                            data-request-token="22e67fd4369911ef923923219c7798f4"
+                                                            data-graded="True" data-has-score="False">
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="vert vert-1">
+                                                        <div
+                                                            class="xblock xblock-student_view xblock-student_view-manual_select_question xblock-initialized">
+                                                            <div class="vert-mod" id="quizPos">
+
+                                                                <script>
+
+                                                                    $(document).ready(function () {
+
+                                                                        function getQueryParams() {
+                                                                            const params = [];
+                                                                            const queryString = window.location.search;
+                                                                            const urlParams = new URLSearchParams(queryString);
+                                                                            for (const [key, value] of urlParams.entries()) {
+                                                                                params.push(value);
+                                                                            }
+                                                                            return params;
+                                                                        }
+
+                                                                        function scrollToQuestion(id) {
+                                                                            const element = document.getElementById(id);
+                                                                            element.scrollIntoView({ behavior: "smooth" });
+                                                                        }
+
+                                                                        function convertAnswerArray(data) {
+                                                                            for (let i = 0; i < data.length; i++) {
+                                                                                var length = data[i].o.length;
+                                                                                var arr = [];
+                                                                                for (let j = 0; j < length; j++) {
+                                                                                    arr.push(0);
+                                                                                }
+                                                                                for (let j = 0; j < data[i].a.length; j++) {
+                                                                                    arr[data[i].a[j] - 1] = 1;
+                                                                                }
+                                                                                data[i].a = arr;
+                                                                            }
+
+                                                                            return data;
+                                                                        }
+
+                                                                        function shuffleQuiz(data) {
+                                                                            for (let i = 0; i < data.length; i++) {
+                                                                                let array1 = data[i].o;
+                                                                                let array2 = data[i].a;
+
+                                                                                let randomIndexes = Array.from({ length: array1.length }, (_, index) => index);
+                                                                                randomIndexes = _.shuffle(randomIndexes);
+
+                                                                                data[i].o = randomIndexes.map(index => array1[index]);
+                                                                                data[i].a = randomIndexes.map(index => array2[index]);
+                                                                            }
+                                                                            return _.shuffle(data).slice(0, 30);
+                                                                        }
+
+                                                                        function addQuizDOM(data) {
+                                                                            data = convertAnswerArray(data);
+                                                                            data = shuffleQuiz(data);
+
+                                                                            const quizPos = document.getElementById('quizPos');
+                                                                            const quizMap = document.getElementById('quizmap');
+
+                                                                            for (let i = 0; i < data.length; i++) {
+                                                                                var htmlRaw = `
+                                                                                    <div class="vert quizzzzzz" id=vert${i}>
+                                                                                        <div class="xblock xblock-student_view xblock-student_view-problem xmodule_display xmodule_ProblemBlock xblock-initialized">
+                                                                                            <div class="problems-wrapper" data-attempts-used="3" role="group">
+                                                                                                <div class="problem">
+                                                                                                    <div>
+                                                                                                        <div class="wrapper-problem-response"
+                                                                                                            role="group" tabindex="-1">
+                                                                                                            <p>
+                                                                                                                Câu ${i + 1}. ${data[i].q}
+                                                                                                            </p>
+                                                                                                            <div class="choicegroup capa_inputtype"
+                                                                                                                id="q-${i}">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    `;
+                                                                                quizPos.insertAdjacentHTML('beforeend', htmlRaw);
+
+                                                                                var quizSquare = `
+                                                                                    <div class="quiz-box" id="qm${i}">
+                                                                                        ${i + 1}
+                                                                                    </div>
+                                                                                `;
+                                                                                quizMap.insertAdjacentHTML('beforeend', quizSquare);
+
+
+                                                                                let ansPos = document.getElementById(`q-${i}`);
+                                                                                for (let k = 0; k < data[i].o.length; k++) {
+                                                                                    var html_ans = `                                                                                    
+                                                                                        <fieldset>
+                                                                                            <div class="field">
+                                                                                                <input
+                                                                                                    class="field-input input-checkbox submitted"
+                                                                                                    id="q-${i}-a-${k}"
+                                                                                                    type="checkbox" data-a="${data[i].a[k]}">
+                                                                                                <label
+                                                                                                    class="response-label field-label label-inline choicegroup_correct"
+                                                                                                    for="q-${i}-a-${k}"
+                                                                                                    id="q-${i}-a-${k}-label">
+                                                                                                    ${data[i].o[k]}
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </fieldset>
+                                                                                    `;
+                                                                                    ansPos.insertAdjacentHTML('beforeend', html_ans);
+                                                                                }
+
+                                                                            }
+
+                                                                            const quizBoxes = document.querySelectorAll('.quiz-box');
+                                                                            quizBoxes.forEach((box, index) => {
+                                                                                box.addEventListener('click', function () {
+                                                                                    scrollToQuestion(`vert${index}`);
+                                                                                });
+                                                                            });
+
+                                                                            const questions = document.querySelectorAll('.capa_inputtype');
+                                                                            questions.forEach(ques => {
+                                                                                ques.addEventListener('change', function () {
+                                                                                    let flag = false;
+
+                                                                                    const checkboxes = ques.querySelectorAll('.input-checkbox');
+                                                                                    for (let j = 0; j < checkboxes.length; j++) {
+                                                                                        if (checkboxes[j].checked) {
+                                                                                            flag = true;
+                                                                                            break;
+                                                                                        }
+                                                                                    }
+
+                                                                                    const qm = document.getElementById(`qm${this.id.split('-')[1]}`);
+                                                                                    if (flag) {
+                                                                                        if (!qm.classList.contains('quiz-box--done')) {
+                                                                                            qm.classList.add('quiz-box--done');
+                                                                                        }
+                                                                                    }
+                                                                                    else {
+                                                                                        if (qm.classList.contains('quiz-box--done')) {
+                                                                                            qm.classList.remove('quiz-box--done');
+                                                                                        }
+                                                                                    }
+                                                                                });
+                                                                            });
+                                                                        }
+
+                                                                        function loadQuiz() {
+                                                                            $.getJSON('/static/https/data/quiz.json', function (data) { 
+                                                                                const quizes = [];
+                                                                                for (let i = 0; i < data.quiz1.length; i++) quizes.push(data.quiz1[i]);
+                                                                                for (let i = 0; i < data.quiz2.length; i++) quizes.push(data.quiz2[i]);
+                                                                                for (let i = 0; i < data.quiz3.length; i++) quizes.push(data.quiz3[i]);
+                                                                                for (let i = 0; i < data.quiz4.length; i++) quizes.push(data.quiz4[i]);
+                                                                                for (let i = 0; i < data.quiz5.length; i++) quizes.push(data.quiz5[i]);
+                                                                                for (let i = 0; i < data.quiz6.length; i++) quizes.push(data.quiz6[i]);
+                                                                                for (let i = 0; i < data.quiz7.length; i++) quizes.push(data.quiz7[i]);
+                                                                                for (let i = 0; i < data.quiz8.length; i++) quizes.push(data.quiz8[i]);
+                                                                                for (let i = 0; i < data.quiz9.length; i++) quizes.push(data.quiz9[i]);
+                                                                                for (let i = 0; i < data.quiz10.length; i++) quizes.push(data.quiz10[i]);
+                                                                                for (let i = 0; i < data.quiz11.length; i++) quizes.push(data.quiz11[i]);
+                                                                                for (let i = 0; i < data.quiz12.length; i++) quizes.push(data.quiz12[i]);
+                                                                                for (let i = 0; i < data.quiz13.length; i++) quizes.push(data.quiz13[i]);
+                                                                                for (let i = 0; i < data.quiz14.length; i++) quizes.push(data.quiz14[i]);
+                                                                                addQuizDOM(quizes);
+                                                                            }).fail(function (jqxhr, textStatus, error) {
+                                                                                console.error('Error loading quiz:', textStatus, error);
+                                                                            });
+                                                                        }
+                                                                        loadQuiz();
+                                                                    });
+
+                                                                </script>
+
+                                                            </div>
+
+
+
+                                                            <script type="text/javascript">
+                                                                (function (require) {
+                                                                    require(['/static/js/dateutil_factory.84670a6ecfae.js?raw'], function () {
+                                                                        require(['js/dateutil_factory'], function (DateUtilFactory) {
+
+                                                                            DateUtilFactory.transform('.localized-datetime');
+
+                                                                        });
+                                                                    });
+                                                                }).call(this, require || RequireJS.require);
+                                                            </script>
+
+
+                                                            <script>
+                                                                function emit_event(message) {
+                                                                    parent.postMessage(message, '*');
+                                                                }
+                                                            </script>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+
+                                                <script type="text/javascript">
+                                                    (function (require) {
+                                                        require(['/static/js/dateutil_factory.84670a6ecfae.js?raw'], function () {
+                                                            require(['js/dateutil_factory'], function (DateUtilFactory) {
+
+                                                                DateUtilFactory.transform('.localized-datetime');
+
+                                                            });
+                                                        });
+                                                    }).call(this, require || RequireJS.require);
+                                                </script>
+
+
+                                                <script>
+                                                    function emit_event(message) {
+                                                        parent.postMessage(message, '*');
+                                                    }
+                                                </script>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <script>
+                                $(window).on("load", function () {
+                                    if ($('.pdf_block').length > 0) {
+                                        var text = $('.pdf_block p').html().replace("It appears you don't have a PDF plugin for this browser.\n  You can", "Bạn không có plugin PDF cho trình duyệt này.\n Bạn có thể");
+                                        $('.pdf_block p').html(text);
+                                        var textLink = $('.pdf_block p').html().replace("click here to\n  download the PDF file.", "nhấp vào đây để\n tải xuống tệp PDF.");
+                                        $('.pdf_block p').html(textLink);
+                                    }
+                                })
+                            </script>
+                        </main>
+                    </section>
+
+                    <section class="courseware-results-wrapper">
+                        <div id="loading-message" aria-live="polite" aria-relevant="all"></div>
+                        <div id="error-message" aria-live="polite"></div>
+                        <div class="courseware-results search-results" data-course-id="" data-lang-code="vi"></div>
+                    </section>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                <script type="text/javascript"
+                    src="/static/bundles/CourseSock.207e89e610bb26d251c9.713b569749c9.js"></script>
+                <script type="text/javascript">
+
+                    new CourseSock({
+                        el: '.verification-sock'
+                    });
+
+                </script>
+
+
+            </div>
+            <div class="container-footer">
+            </div>
+
+
+
+            <script type="text/javascript">
+                (function (require) {
+                    require(['/static/js/commerce/track_ecommerce_events.0a92c313c996.js?raw'], function () {
+                        require(['js/commerce/track_ecommerce_events'], function (TrackECommerceEvents) {
+
+
+                            var fbeLink = $("#FBE_banner");
+                            var welcomeLink = $("#welcome");
+                            var accessDeniedUpsellLink = $("#accessDeniedUpsell");
+                            var sockLink = $("#sock");
+
+                            TrackECommerceEvents.trackUpsellClick(fbeLink, 'in_course_audit_access_expires', {
+                                pageName: "in_course",
+                                linkType: "link",
+                                linkCategory: "FBE_banner"
+                            });
+
+                            TrackECommerceEvents.trackUpsellClick(welcomeLink, 'in_course_welcome', {
+                                pageName: "in_course",
+                                linkType: "link",
+                                linkCategory: "welcome"
+                            });
+
+                            TrackECommerceEvents.trackUpsellClick(accessDeniedUpsellLink, 'in_course_upgrade', {
+                                pageName: "in_course",
+                                linkType: "link",
+                                linkCategory: "(none)"
+                            });
+
+                            TrackECommerceEvents.trackUpsellClick(sockLink, 'in_course_sock', {
+                                pageName: "in_course",
+                                linkType: "button",
+                                linkCategory: "green_upgrade"
+                            });
+
+
+                        });
+                    });
+                }).call(this, require || RequireJS.require);
+            </script>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <link href="/static/MOOC_Study/css/lms-footer-edx.a433f921981d.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+    </div>
+
+
+
+    <script type="text/javascript" src="/static/common/js/vendor/jquery.scrollTo.525edcc52fe8.js"></script>
+    <script type="text/javascript" src="/static/js/vendor/flot/jquery.flot.d3d45ff0c6a8.js"></script>
+
+
+
+    <script type="text/javascript" src="/static/js/lms-courseware.515d666a83a0.js" charset="utf-8"></script>
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        // Fast Preview was introduced in 2.5. However, it
+        // causes undesirable flashing/font size changes when
+        // MathJax is used for interactive preview (equation editor).
+        // Setting processSectionDelay to 0 (see below) fully eliminates
+        // fast preview, but to reduce confusion, we are also setting
+        // the option as displayed in the context menu to false.
+        // When upgrading to 2.6, check if this variable name changed.
+        window.MathJax = {
+            menuSettings: { CHTMLpreview: false }
+        };
+    </script>
+
+    <script type="text/x-mathjax-config;executed=true">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [
+        ["\\(","\\)"],
+        ['[mathjaxinline]','[/mathjaxinline]']
+      ],
+      displayMath: [
+        ["\\[","\\]"],
+        ['[mathjax]','[/mathjax]']
+      ]
+    }
+  });
+</script>
+    <script type="text/x-mathjax-config;executed=true">
+
+  // In order to eliminate all flashing during interactive
+  // preview, it is necessary to set processSectionDelay to 0
+  // (remove delay between input and output phases). This
+  // effectively disables fast preview, regardless of
+  // the fast preview setting as shown in the context menu.
+  MathJax.Hub.processSectionDelay = 0;
+
+  MathJax.Hub.signal.Interest(function(message) {
+    if(message[0] === "End Math") {
+        set_mathjax_display_div_settings();
+    }
+  });
+  function set_mathjax_display_div_settings() {
+    $('.MathJax_Display').each(function( index ) {
+      this.setAttribute('tabindex', '0');
+      this.setAttribute('aria-live', 'off');
+      this.removeAttribute('role');
+      this.removeAttribute('aria-readonly');
+    });
+  }
+</script>
+
+    <script type="text/javascript">
+        // Activating Mathjax accessibility files
+        window.MathJax = {
+            menuSettings: {
+                collapsible: true,
+                autocollapse: false,
+                explorer: true
+            }
+        };
+    </script>
+
+    <!-- This must appear after all mathjax-config blocks, so it is after the imports from the other templates.
+     It can't be run through static.url because MathJax uses crazy url introspection to do lazy loading of
+     MathJax extension libraries -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+
+
+
+
+
+    <script type="text/javascript" src="/static/js/courseware/courseware_factory.1504fc10caef.js?raw"></script>
+    <script type="text/javascript">
+        (function (require) {
+            require(['js/courseware/courseware_factory'], function (CoursewareFactory) {
+
+                CoursewareFactory();
+
+            });
+        }).call(this, require || RequireJS.require);
+    </script>
+
+    <script src="/static/xblock/resources/xmodule.quiz_navigator_module/public/js/quiz_navigation_map.44840b65d5e9.js"
+        type="application/javascript"></script>
+    <script src="/static/bundles/ProblemBlockPreview.d7d1a50b45ae15ff4485.bb2a5e097462.js"
+        type="application/javascript"></script>
+    <script src="/static/bundles/XModuleShim.e03571529f8ee6f0ae6d.ecc178d1e5da.js"
+        type="application/javascript"></script>
+    <script src="/static/bundles/VerticalStudentView.a1cd89253468e510325d.45b232b5a166.js"
+        type="application/javascript"></script>
+
+
+
+
+
+
+
+    <script type="text/javascript" src="/static/js/utils/navigation.08930e16ab3d.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/static/js/header/header.309a1243e175.js"></script>
+
+    <script type="text/javascript" src="/static/js/src/jquery_extend_patch.54dddef28d15.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/static/MOOC_Study/js/main.5c1841392a89.js"></script>
+
+
+
+
+    <div id="reader-feedback" class="sr" aria-live="polite"></div>
+    <div class="tooltip" style="display: none; opacity: 0;"></div><!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+    <!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+    <!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.1/underscore-min.js"></script>
+
+
+</body>
+
+</html>
