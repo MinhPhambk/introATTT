@@ -503,7 +503,7 @@
             "a" : [1,2,3]
         },
         {
-            "q" : "Trong hàm viết bằng ngôn ngữ C dưới đây, lỗi tràn bộ đệm xảy ra khi nào?<br>void func(char buff1[], char buff2[])<br>{<br>int n = strlen(buff2);<br>if (n < 1024) strcpy(buff1, buff2);<br>}",
+            "q" : "Trong hàm viết bằng ngôn ngữ C dưới đây, lỗi tràn bộ đệm xảy ra khi nào?<br>void func(char buff1[], char buff2[])<br>{<br>int n = strlen(buff2);<br>if (n < 1024)<br> strcpy(buff1, buff2);<br>}",
             "o" : ["buff2 có kích thước lớn hơn 1024 byte", "buff1 có kích thước nhỏ hơn buff2", "buff1 có kích thước nhỏ hơn 1023 và buff1 có kích thước nhỏ hơn buff2", "buff1 có kích thước nhỏ hơn 1024 byte", "Hàm này không có lỗ hổng tràn bộ đệm"],
             "a" : [2]
         }
@@ -520,7 +520,7 @@
             "a" : [3,4]
         },
         {
-            "q" : "Cho hàm viết bằng chương trình C như sau. Lỗ hổng tràn bộ đệm có thể sửa như thế nào?<br>void func(char buff1[], char buff2[])<br>{<br>int n = strlen(buff2);<br>if (n < 1024) strcpy(buff1, buff2);<br>}",
+            "q" : "Cho hàm viết bằng chương trình C như sau. Lỗ hổng tràn bộ đệm có thể sửa như thế nào?<br>void func(char buff1[], char buff2[])<br>{<br>int n = strlen(buff2);<br>if (n < 1024)<br> strcpy(buff1, buff2);<br>}",
             "o" : ["Xoá dòng lệnh số 3", "Xóa dòng lệnh số 2", "Sửa điều kiện dòng lệnh số 4 thành if (strlen(buff1) > strlen(buff2))", "Sửa điều kiện dòng lệnh số 4 thành if (n <= 1024)"],
             "a" : [3]
         },
@@ -550,7 +550,7 @@
             "a" : [1,2]
         },
         {
-            "q" : "Tiền điều kiện của hàm sau là gì?<br>void copyHead(char *src, char *dst, int n)<br>{<br>for (int i =0; i < n; i++) dst + i = src + 1;<br>}",
+            "q" : "Tiền điều kiện của hàm sau là gì?<br>void copyHead(char *src, char *dst, int n)<br>{<br>for (int i =0; i < n; i++)<br> dst + i = src + 1;<br>}",
             "o" : ["src != null", "dst != null", "n > 0", "n <= strlen(src)", "n <= strlen(dst)", "strlen(dst) >= strlen(src)"],
             "a" : [1,2,4,5]
         }
