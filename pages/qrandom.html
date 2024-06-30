@@ -2394,7 +2394,7 @@
 
                                                 <h2 class="hd hd-2 unit-title"><span
                                                         style="font-size: 23px;">Quiz 30 câu ngẫu nhiên</span>
-                                                    <a href="/index.html" class="btn btn-primary" role="button"
+                                                    <a href="../index.html" class="btn btn-primary" role="button"
                                                         style="margin-left:5px;">Home</a>
                                                 </h2>
 
@@ -2572,7 +2572,7 @@
                                                                         }
 
                                                                         function loadQuiz() {
-                                                                            $.getJSON('/static/https/data/quiz.json', function (data) { 
+                                                                            $.getJSON('../static/https/data/quiz.json', function (data) { 
                                                                                 const quizes = [];
                                                                                 for (let i = 0; i < data.quiz1.length; i++) quizes.push(data.quiz1[i]);
                                                                                 for (let i = 0; i < data.quiz2.length; i++) quizes.push(data.quiz2[i]);
@@ -2604,7 +2604,7 @@
 
                                                             <script type="text/javascript">
                                                                 (function (require) {
-                                                                    require(['/static/js/dateutil_factory.84670a6ecfae.js?raw'], function () {
+                                                                    require(['../static/js/dateutil_factory.84670a6ecfae.js?raw'], function () {
                                                                         require(['js/dateutil_factory'], function (DateUtilFactory) {
 
                                                                             DateUtilFactory.transform('.localized-datetime');
@@ -2630,7 +2630,7 @@
 
                                                 <script type="text/javascript">
                                                     (function (require) {
-                                                        require(['/static/js/dateutil_factory.84670a6ecfae.js?raw'], function () {
+                                                        require(['../static/js/dateutil_factory.84670a6ecfae.js?raw'], function () {
                                                             require(['js/dateutil_factory'], function (DateUtilFactory) {
 
                                                                 DateUtilFactory.transform('.localized-datetime');
@@ -2708,7 +2708,7 @@
 
             <script type="text/javascript">
                 (function (require) {
-                    require(['/static/js/commerce/track_ecommerce_events.0a92c313c996.js?raw'], function () {
+                    require(['../static/js/commerce/track_ecommerce_events.0a92c313c996.js?raw'], function () {
                         require(['js/commerce/track_ecommerce_events'], function (TrackECommerceEvents) {
 
 
